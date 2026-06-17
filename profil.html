@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Tableau de bord</title>
+    <link rel="stylesheet" href="/static/style.css">
+</head>
+
+<body>
+
+<nav>
+    <a href="/">Accueil</a>
+    <a href="/profil">Profil</a>
+    <a href="/deconnexion">Déconnexion</a>
+</nav>
+
+<div class="profil">
+    <h1>Bienvenue {{ nom }} 👋</h1>
+
+    <p>Tu es connecté à ton espace personnel.</p>
+
+    <div class="carte">
+        <h2>Mon compte</h2>
+        <p>Nom utilisateur : {{ nom }}</p>
+        <p>Statut : Membre</p>
+        <a href="/modifier">Modifier mon profil</a>
+    </div>
+</div>
+
+</body>
+</html>
